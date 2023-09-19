@@ -32,7 +32,7 @@ function displayResults(data){
     mapLocation(lat, lng)
 }
 
-fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`)
+fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${myKey}`)
     .then(res => res.json())
     .then(data => displayResults(data))
 
